@@ -7,3 +7,4 @@ React boilerplate project
 - Webpack
 - Babel
 - ES6 and JSX support
+- ESLint (extends airbnb)
