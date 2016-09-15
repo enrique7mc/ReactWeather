@@ -4,6 +4,6 @@ React boilerplate project
 
 ## Features
 
--Webpack
--Babel
--ES6 and JSX support
+- Webpack
+- Babel
+- ES6 and JSX support
