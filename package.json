@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "wp-server": "webpack -w",
-    "lint": "eslint app/components",
+    "lint": "eslint app/**",
     "dev": "concurrently --kill-others 'npm start' 'npm run wp-server'"
   },
   "author": "Enrique Munguía",
