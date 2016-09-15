@@ -1,13 +1,13 @@
-# ReactBoilerplate
+# React Weather
 
-React boilerplate project
+Weather application using React JS
 
 ## Features
 
 - Webpack
 - Babel
 - ES6 and JSX support
-- ESLint (extends airbnb)
+- React Router
 
 ## Use
 
