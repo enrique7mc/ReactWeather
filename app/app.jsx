@@ -1,7 +1,11 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Route, Router, hashHistory } from 'react-router';
+import Main from './components/Main';
 
 ReactDOM.render(
-  <h1>Boilerplate App!</h1>,
+  <Router history={hashHistory}>
+    <Route path="/" component={Main} />
+  </Router>,
   document.getElementById('app')
 );
