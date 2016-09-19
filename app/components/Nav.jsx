@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { IndexLink } from 'react-router';
 
 const Nav = function Nav() {
   return (<div>
     <h2>Nav Component</h2>
-    <Link to="/">Get Weather</Link>
-    <Link to="/about">About</Link>
+    <IndexLink to="/" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>Get Weather</IndexLink>
+    <IndexLink to="/about" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>About</IndexLink>
+    <IndexLink to="/examples" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>Examples</IndexLink>
   </div>);
 };
 
