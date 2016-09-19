@@ -1,9 +1,14 @@
 import React from 'react';
+import WeatherForm from './WeatherForm';
+import WeatherMessage from './WeatherMessage';
 
-export default class Weather extends React.Component {
-  render() {
-    return (
-      <h3>Weather Component</h3>
-    );
-  }
-}
+const Weather = function Weather() {
+  return (
+    <div>
+      <WeatherForm />
+      <WeatherMessage />
+    </div>
+  );
+};
+
+module.exports = Weather;
