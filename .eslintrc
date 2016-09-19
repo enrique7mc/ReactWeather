@@ -11,6 +11,8 @@
   },
   "rules": {
     "no-console": 1,
+    "class-methods-use-this": 1,
+    "react/prefer-stateless-function": 1,
     "comma-dangle": 0,
     "react/require-extension": "off"
   }

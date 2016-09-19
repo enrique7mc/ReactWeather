@@ -11,4 +11,8 @@ const Main = function Main(props) {
   );
 };
 
+Main.propTypes = {
+  children: React.PropTypes.node,
+};
+
 module.exports = Main;
