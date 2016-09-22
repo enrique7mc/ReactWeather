@@ -1,10 +1,15 @@
 import React from 'react';
 
-const WeatherMessage = () => (
+const WeatherMessage = props => (
   <div>
-    <p>Mexico City</p>
-    <p>18°</p>
+    <p>{props.city}</p>
+    <p>{props.temperature}°</p>
   </div>
 );
+
+WeatherMessage.propTypes = {
+  city: React.PropTypes.string.isRequired,
+  temperature: React.PropTypes.number.isRequired
+};
 
 module.exports = WeatherMessage;

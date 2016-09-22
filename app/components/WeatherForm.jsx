@@ -8,7 +8,10 @@ export default class WeatherForm extends Component {
   onFormSubmit(e) {
     e.preventDefault();
     const city = this.cityInput.value;
-    console.log(city);
+    if (city.length > 0) {
+      this.cityInput.value = '';
+      this.props.onSearch(city);
+    }
   }
   render() {
     return (
@@ -22,3 +25,7 @@ export default class WeatherForm extends Component {
     );
   }
 }
+
+WeatherForm.propTypes = {
+  onSearch: React.PropTypes.func.isRequired
+};
