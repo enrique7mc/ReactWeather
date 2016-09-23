@@ -1,9 +1,9 @@
 import React from 'react';
 
-const WeatherMessage = props => (
+const WeatherMessage = ({ city, temperature }) => (
   <div>
-    <p>{props.city}</p>
-    <p>{props.temperature}°</p>
+    <p>{city}</p>
+    <p>{temperature}°</p>
   </div>
 );
 
