@@ -1,6 +1,7 @@
 import React from 'react';
 import WeatherForm from './WeatherForm';
 import WeatherMessage from './WeatherMessage';
+import OpenWeatherMap from '../api/openWeatherMap';
 
 class Weather extends React.Component {
   constructor() {
@@ -13,10 +14,12 @@ class Weather extends React.Component {
   }
 
   handleSearch(city) {
-    this.setState({
-      city,
-      temp: 23
-    });
+    OpenWeatherMap.getTemperature(city)
+      .then((temp) => {
+        this.setState({ city, temp });
+      }, (error) => {
+        console.log(error);
+      });
   }
 
   render() {

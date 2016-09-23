@@ -10,12 +10,13 @@
   "scripts": {
     "start": "node server.js",
     "wp-server": "webpack -w",
-    "lint": "eslint . --ext .jsx",
+    "lint": "eslint . --ext .jsx --ext .js --ignore-pattern '/public/'",
     "dev": "concurrently --kill-others 'npm start' 'npm run wp-server'"
   },
   "author": "Enrique Munguía",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.14.0",
     "express": "^4.13.4",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
