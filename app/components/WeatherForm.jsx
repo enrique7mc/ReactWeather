@@ -16,10 +16,9 @@ export default class WeatherForm extends Component {
   render() {
     return (
       <div>
-        <h1>Get Weather</h1>
         <form onSubmit={this.onFormSubmit}>
           <input type="text" ref={c => (this.cityInput = c)} placeholder="Enter your city" />
-          <button>Submit</button>
+          <button className="button hollow expanded">Get Weather</button>
         </form>
       </div>
     );
