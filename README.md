@@ -8,6 +8,9 @@ Weather application using React JS
 - Babel
 - ES6 and JSX support
 - React Router
+- OpenWeatherMap
+- Foundation
+- ESLint
 
 ## Use
 
