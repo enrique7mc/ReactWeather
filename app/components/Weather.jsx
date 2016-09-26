@@ -39,7 +39,12 @@ class Weather extends React.Component {
 
   showErrorModal() {
     if (this.state.errorMessage) {
-      return (<ErrorModal />);
+      return (
+        <ErrorModal
+          title="Could not fetch weather"
+          message={this.state.errorMessage}
+        />
+      );
     }
 
     return null;
