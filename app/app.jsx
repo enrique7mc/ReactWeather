@@ -9,7 +9,7 @@ import Examples from './components/Examples';
 // Load foundation-sites
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved */
 require('style!css!foundation-sites/dist/foundation.min.css');
-require('style!css!./styles/app.css');
+require('style!css!sass!./styles/app.scss');
 
 $(document).foundation();
 /* eslint-enable import/no-extraneous-dependencies, import/no-unresolved */
