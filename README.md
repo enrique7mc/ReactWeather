@@ -11,6 +11,7 @@ Weather application using React JS
 - OpenWeatherMap
 - Foundation
 - ESLint
+- Sass support
 
 ## Use
 

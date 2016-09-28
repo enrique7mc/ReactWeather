@@ -13,8 +13,29 @@ class Weather extends React.Component {
     this.handleSearch = this.handleSearch.bind(this);
   }
 
+  componentDidMount() {
+    const city = this.props.location.query.location;
+    if (location) {
+      this.handleSearch(city);
+      window.location.hash = '#/';
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const city = nextProps.location.query.location;
+    if (city) {
+      this.handleSearch(city);
+      window.location.hash = '#/';
+    }
+  }
+
   handleSearch(city) {
-    this.setState({ isLoading: true, errorMessage: null });
+    this.setState({
+      isLoading: true,
+      errorMessage: null,
+      city: null,
+      temp: null
+    });
     OpenWeatherMap.getTemperature(city)
       .then((temp) => {
         this.setState({ city, temp, isLoading: false });
@@ -62,5 +83,10 @@ class Weather extends React.Component {
   }
 }
 
+Weather.propTypes = {
+  location: React.PropTypes.shape({
+    query: React.PropTypes.object,
+  })
+};
 
 module.exports = Weather;
