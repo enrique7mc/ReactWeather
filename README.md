@@ -18,3 +18,7 @@ Weather application using React JS
 - `git clone`
 - `npm install`
 - `npm run dev`
+
+## Live Demo
+
+You can check a live demo deployed in [Heroku](http://vast-eyrie-31151.herokuapp.com/)
